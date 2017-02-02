@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B5C1053D1E43C94100FA7E92 /* Combined Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B5C1053E1E43C94100FA7E92 /* Build configuration list for PBXAggregateTarget "Combined Framework" */;
+			buildPhases = (
+				B5C105411E43C94800FA7E92 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Combined Framework";
+			productName = "Combined Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		83043017B73BC66DBB920D5C /* Pods_HeroExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE340F89FF0A49DD23A5A6E /* Pods_HeroExamples.framework */; };
 		A304BF841DF2717900A03345 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BF831DF2717900A03345 /* ImageViewController.swift */; };
@@ -152,6 +166,7 @@
 		B114B6911E412A140009CEDE /* AppleHomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppleHomePage.storyboard; sourceTree = "<group>"; };
 		B185A4E51DFA6E0C00C3B85D /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = ListToGrid/ListTableViewController.swift; sourceTree = "<group>"; };
 		B185A4E71DFA6FE200C3B85D /* GridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridCollectionViewController.swift; path = ListToGrid/GridCollectionViewController.swift; sourceTree = "<group>"; };
+		B5C105431E43CC3C00FA7E92 /* BuildFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildFramework.sh; sourceTree = "<group>"; };
 		C377744CBFF1E24426E80F55 /* Pods-HeroExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples.release.xcconfig"; sourceTree = "<group>"; };
 		EEE340F89FF0A49DD23A5A6E /* Pods_HeroExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -269,6 +284,7 @@
 		A33E60981DE761C90065CBD8 = {
 			isa = PBXGroup;
 			children = (
+				B5C105421E43CC3C00FA7E92 /* Combined */,
 				A33E60A31DE761C90065CBD8 /* HeroExamples */,
 				A306D3B31E1C7A2E00B6C23A /* Hero */,
 				A33E60A21DE761C90065CBD8 /* Products */,
@@ -389,6 +405,14 @@
 			name = LabelMorph;
 			sourceTree = "<group>";
 		};
+		B5C105421E43CC3C00FA7E92 /* Combined */ = {
+			isa = PBXGroup;
+			children = (
+				B5C105431E43CC3C00FA7E92 /* BuildFramework.sh */,
+			);
+			path = Combined;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -456,13 +480,17 @@
 				TargetAttributes = {
 					A306D3B11E1C7A2E00B6C23A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4VSEW78TKT;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					A33E60A01DE761C90065CBD8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4VSEW78TKT;
+						ProvisioningStyle = Automatic;
+					};
+					B5C1053D1E43C94100FA7E92 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YY6CWUX533;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -482,6 +510,7 @@
 			targets = (
 				A33E60A01DE761C90065CBD8 /* HeroExamples */,
 				A306D3B11E1C7A2E00B6C23A /* Hero */,
+				B5C1053D1E43C94100FA7E92 /* Combined Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -561,6 +590,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		B5C105411E43C94800FA7E92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = Combined/BuildFramework.sh;
 		};
 		B60F2CF0B495F2D785FF29A1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -757,7 +799,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4VSEW78TKT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -783,7 +825,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4VSEW78TKT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -928,6 +970,22 @@
 			};
 			name = Release;
 		};
+		B5C1053F1E43C94100FA7E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YY6CWUX533;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5C105401E43C94100FA7E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YY6CWUX533;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -957,6 +1015,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B5C1053E1E43C94100FA7E92 /* Build configuration list for PBXAggregateTarget "Combined Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C1053F1E43C94100FA7E92 /* Debug */,
+				B5C105401E43C94100FA7E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
