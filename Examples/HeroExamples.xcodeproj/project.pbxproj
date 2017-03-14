@@ -31,8 +31,6 @@
 		A306D3FB1E1D7A7200B6C23A /* LiveInjection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A306D3F91E1D7A7200B6C23A /* LiveInjection.storyboard */; };
 		A313499B1E1E2AED00EB5139 /* ImageLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A313499A1E1E2AED00EB5139 /* ImageLibrary.swift */; };
 		A3298CDA1E304851005B06BB /* BasePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3298CD91E304851005B06BB /* BasePreprocessor.swift */; };
-		A3298CDF1E315B96005B06BB /* LabelMorphPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3298CDD1E315B96005B06BB /* LabelMorphPlugin.swift */; };
-		A3298CE01E315B96005B06BB /* LabelMorphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3298CDE1E315B96005B06BB /* LabelMorphViewController.swift */; };
 		A33E60A51DE761C90065CBD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33E60A41DE761C90065CBD8 /* AppDelegate.swift */; };
 		A33E60AA1DE761C90065CBD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33E60A81DE761C90065CBD8 /* Main.storyboard */; };
 		A33E60AC1DE761C90065CBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33E60AB1DE761C90065CBD8 /* Assets.xcassets */; };
@@ -52,7 +50,6 @@
 		A35949241E1A36D00095F407 /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35949221E1A36D00095F407 /* ImageViewer.storyboard */; };
 		A35949271E1A384E0095F407 /* ListToGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35949251E1A384E0095F407 /* ListToGrid.storyboard */; };
 		A359492A1E1A39B30095F407 /* Debug.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35949281E1A39B30095F407 /* Debug.storyboard */; };
-		A359492D1E1A39D00095F407 /* LabelMorph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A359492B1E1A39D00095F407 /* LabelMorph.storyboard */; };
 		A37D7B411E2C0C7E00AC1959 /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D7B3D1E2C0C7E00AC1959 /* CascadePreprocessor.swift */; };
 		A37D7B421E2C0C7E00AC1959 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D7B3E1E2C0C7E00AC1959 /* IgnoreSubviewModifiersPreprocessor.swift */; };
 		A37D7B431E2C0C7E00AC1959 /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D7B3F1E2C0C7E00AC1959 /* MatchPreprocessor.swift */; };
@@ -106,7 +103,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5CD4F09A588E81DA75C2BE38 /* Pods-HeroExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		A304BF831DF2717900A03345 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ImageGallery/ImageViewController.swift; sourceTree = "<group>"; };
 		A304BF891DF647FC00A03345 /* ImageCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCells.swift; path = ImageGallery/ImageCells.swift; sourceTree = "<group>"; };
 		A306D3B21E1C7A2E00B6C23A /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +163,6 @@
 		B185A4E51DFA6E0C00C3B85D /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = ListToGrid/ListTableViewController.swift; sourceTree = "<group>"; };
 		B185A4E71DFA6FE200C3B85D /* GridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridCollectionViewController.swift; path = ListToGrid/GridCollectionViewController.swift; sourceTree = "<group>"; };
 		B5C105431E43CC3C00FA7E92 /* BuildFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildFramework.sh; sourceTree = "<group>"; };
-		C377744CBFF1E24426E80F55 /* Pods-HeroExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples.release.xcconfig"; sourceTree = "<group>"; };
 		EEE340F89FF0A49DD23A5A6E /* Pods_HeroExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -245,8 +240,6 @@
 		46383DC6A22A87056E5B40EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5CD4F09A588E81DA75C2BE38 /* Pods-HeroExamples.debug.xcconfig */,
-				C377744CBFF1E24426E80F55 /* Pods-HeroExamples.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -449,13 +442,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A33E60B31DE761C90065CBD8 /* Build configuration list for PBXNativeTarget "HeroExamples" */;
 			buildPhases = (
-				AB630E15554685FDB346A796 /* [CP] Check Pods Manifest.lock */,
-				A0BDF7221E2FCC5A0028778F /* Swiftlint */,
 				A33E609D1DE761C90065CBD8 /* Sources */,
 				A33E609E1DE761C90065CBD8 /* Frameworks */,
 				A33E609F1DE761C90065CBD8 /* Resources */,
-				23B031AF37B3297143AE7376 /* [CP] Embed Pods Frameworks */,
-				B60F2CF0B495F2D785FF29A1 /* [CP] Copy Pods Resources */,
 				A306D3BA1E1C7A2E00B6C23A /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -540,57 +529,12 @@
 				A306D3FB1E1D7A7200B6C23A /* LiveInjection.storyboard in Resources */,
 				A35949131E1A29800095F407 /* Basic.storyboard in Resources */,
 				A35949161E1A2A6A0095F407 /* MusicPlayer.storyboard in Resources */,
-				A359492D1E1A39D00095F407 /* LabelMorph.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23B031AF37B3297143AE7376 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A0BDF7221E2FCC5A0028778F /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		AB630E15554685FDB346A796 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		B5C105411E43C94800FA7E92 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,21 +547,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = Combined/BuildFramework.sh;
-		};
-		B60F2CF0B495F2D785FF29A1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -662,7 +591,6 @@
 				A33E60BF1DE7621C0065CBD8 /* CityGuideCell.swift in Sources */,
 				A33E60A51DE761C90065CBD8 /* AppDelegate.swift in Sources */,
 				A33E60BE1DE7621C0065CBD8 /* City.swift in Sources */,
-				A3298CDF1E315B96005B06BB /* LabelMorphPlugin.swift in Sources */,
 				A304BF841DF2717900A03345 /* ImageViewController.swift in Sources */,
 				A306D3F61E1D7A1A00B6C23A /* LiveInjection2ViewControllers.swift in Sources */,
 				B10FDD451E00DD9800B7B66E /* DebugViewController.swift in Sources */,
@@ -671,7 +599,6 @@
 				A33E60C11DE7621C0065CBD8 /* CityViewController.swift in Sources */,
 				B185A4E81DFA6FE200C3B85D /* GridCollectionViewController.swift in Sources */,
 				A304BF8A1DF647FC00A03345 /* ImageCells.swift in Sources */,
-				A3298CE01E315B96005B06BB /* LabelMorphViewController.swift in Sources */,
 				A313499B1E1E2AED00EB5139 /* ImageLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -938,7 +865,6 @@
 		};
 		A33E60B41DE761C90065CBD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CD4F09A588E81DA75C2BE38 /* Pods-HeroExamples.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -955,7 +881,6 @@
 		};
 		A33E60B51DE761C90065CBD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C377744CBFF1E24426E80F55 /* Pods-HeroExamples.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

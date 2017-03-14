@@ -22,7 +22,7 @@
 
 import UIKit
 import Hero
-import ChameleonFramework
+//import ChameleonFramework
 
 class GridImageCell: UICollectionViewCell {
   @IBOutlet weak var imageView: UIImageView!
@@ -56,7 +56,7 @@ class GridCollectionViewController: UICollectionViewController, UICollectionView
     cell.imageView?.heroModifiers = [.arc, .zPosition(10)]
     cell.textLabel?.text = "Item \(indexPath.item)"
     cell.detailTextLabel?.text = "Description \(indexPath.item)"
-    cell.backgroundColor = UIColor(averageColorFrom: image)
+//    cell.backgroundColor = UIColor(averageColorFrom: image)
 
     return cell
   }

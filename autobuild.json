@@ -1,0 +1,9 @@
+{
+  "name" : "Hero",
+  "working-directory" : "..\/..\/",
+  "ios-output" : [
+    "..\/iOS Framework\/Hero.framework"
+  ],
+  "scriptpath" : "..\/Examples\/Combined\/BuildFramework.sh",
+  "disabled" : true
+}
