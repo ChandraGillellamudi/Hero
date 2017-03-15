@@ -1,6 +1,6 @@
 {
   "name" : "Hero",
-  "working-directory" : "..\/..\/",
+  "working-directory" : "Examples",
   "ios-output" : [
     "..\/iOS Framework\/Hero.framework"
   ],
